@@ -1,0 +1,8 @@
+2011-01-20
+----------
+* Refactor to a header-only library
+* Add connection::disconnect() to disconnect a Qt signal from a slot
+    - Avoids the need to delete connection::qobj to disconnect.
+* Improve demo/main.cpp
+* Update sigfwd/support/boost/signals2.hpp to be compatible with Boost 1.45
+* Add waf build tool [https://code.google.com/p/waf/]
