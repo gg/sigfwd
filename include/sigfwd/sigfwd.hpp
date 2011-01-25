@@ -10,9 +10,10 @@
 
 #include <boost/version.hpp>
 #include <sigfwd/support/boost/function.hpp>
-#include <sigfwd/support/boost/signals.hpp>
 #if BOOST_VERSION >= 103900
 #include <sigfwd/support/boost/signals2.hpp>
+#else
+#include <sigfwd/support/boost/signals.hpp>
 #endif
 #include <sigfwd/support/boost/bind.hpp>
 
