@@ -68,6 +68,9 @@ namespace sigfwd
         // The signal_forwarder that we create below will be a QObject owned by emitter.
         // So despite appearances, we aren't really leaking an object here.
         impl::signal_forwarder *fwd = new impl::signal_forwarder_impl<Functor_, traits>(emitter, receiver);
+        // Moving the forwarder to the same thread as the emitter ensures
+        // signals will be received.
+        fwd->moveToThread(emitter);
         connection con = fwd->connect(emitter, qt_signal_sig, recv_sig.c_str(), conn_type, check_sigs);
 
         return con;
