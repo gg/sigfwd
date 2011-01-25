@@ -25,7 +25,7 @@
 #include <string>
 #include <typeinfo>
 
-#include <QMetaType>
+#include <QtCore/QMetaType>
 
 namespace sigfwd
 {

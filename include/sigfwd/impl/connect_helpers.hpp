@@ -13,7 +13,7 @@
 #include <boost/mpl/pop_front.hpp>
 #include <boost/mpl/push_front.hpp>
 
-#include <QObject>
+#include <QtCore/QObject>
 
 namespace sigfwd
 {

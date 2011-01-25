@@ -3,12 +3,12 @@
 // (See accompanying file LICENSE_1_0.txt or copy at
 // http://www.boost.org/LICENSE_1_0.txt)
 
-#include <QApplication>
-#include <QHBoxLayout>
-#include <QLabel>
-#include <QMessageBox>
-#include <QPushButton>
-#include <QSlider>
+#include <QtCore/QApplication>
+#include <QtGui/QHBoxLayout>
+#include <QtGui/QLabel>
+#include <QtGui/QMessageBox>
+#include <QtGui/QPushButton>
+#include <QtGui/QSlider>
 
 #include <boost/signals2.hpp>
 

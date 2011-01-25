@@ -6,7 +6,7 @@
 #ifndef CONNECTION_HPP_0034_08072010
 #define CONNECTION_HPP_0034_08072010
 
-#include <QObject>
+#include <QtCore/QObject>
 
 namespace sigfwd
 {

@@ -15,7 +15,7 @@
 #include <boost/ref.hpp>
 #include <boost/type_traits/remove_reference.hpp>
 
-#include <QObject>
+#include <QtCore/QObject>
 
 #include <cassert>
 
