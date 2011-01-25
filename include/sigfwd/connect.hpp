@@ -70,7 +70,7 @@ namespace sigfwd
         impl::signal_forwarder *fwd = new impl::signal_forwarder_impl<Functor_, traits>(emitter, receiver);
         // Moving the forwarder to the same thread as the emitter ensures
         // signals will be received.
-        fwd->moveToThread(emitter);
+        fwd->moveToThread(emitter->thread());
         connection con = fwd->connect(emitter, qt_signal_sig, recv_sig.c_str(), conn_type, check_sigs);
 
         return con;
